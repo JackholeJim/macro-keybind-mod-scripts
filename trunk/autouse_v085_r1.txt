@@ -1,0 +1,11 @@
+if(autousing);
+    log("&2[Macro] &fAutouse Stopped.");
+    unset(autousing);
+    stop();
+else;
+    log("&2[Macro] &fAutouse Started.");
+    set(autousing);
+    do;
+        key(use);
+    loop;
+endif;
