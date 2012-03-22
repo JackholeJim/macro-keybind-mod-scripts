@@ -1,0 +1,10 @@
+if(sneake);
+    log("&2[Macro] &fSneak off.");
+    unset(sneake);
+    keyup(sneak);
+    stop();
+else;
+    log("&2[Macro] &fSneak on.");
+    set(sneake);
+    keydown(sneak);
+endif;
