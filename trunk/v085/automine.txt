@@ -1,0 +1,10 @@
+if(automine);
+    log("Automine Disabled");
+    unset(automine);
+else;
+    log("Automine Enabled");
+    set(automine);
+    do;
+        key(attack);
+    while(automine);
+endif;

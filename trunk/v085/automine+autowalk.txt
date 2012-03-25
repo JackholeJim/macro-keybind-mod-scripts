@@ -1,0 +1,14 @@
+if(autominewalk);
+    log("Automine & Sneak Disabled");
+    keyup(forward);
+    keyup(sneak);
+    unset(autominewalk);
+else;
+    log("Automine & Sneak Enabled");
+    set(autominewalk);
+    keydown(forward);
+    keydown(sneak);
+    do;
+        key(attack);
+    while(autominewalk);
+endif;
